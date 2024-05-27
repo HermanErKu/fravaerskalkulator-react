@@ -69,14 +69,6 @@ function App() {
         <label htmlFor="fag">Hvilket fag skal du ta fri?</label><br/>
         <select name="fag" id="fag" onChange={handleFagChange}>
           {optionsArray}
-          {/*<option value="0">{fag_data[yearID][0].name}</option>
-          <option value="1">{fag_data[yearID][1].name}</option>
-          <option value="2">{fag_data[yearID][2].name}</option>
-          <option value="3">{fag_data[yearID][3].name}</option>
-          <option value="4">{fag_data[yearID][4].name}</option>
-          <option value="5">{fag_data[yearID][5].name}</option>
-          <option value="6">{fag_data[yearID][6].name}</option>
-          <option value="7">{fag_data[yearID][7].name}</option>*/}
         </select><br /><br />
 
         <label htmlFor="timer">Hvor mange timer skal du ta fri?</label><br />
