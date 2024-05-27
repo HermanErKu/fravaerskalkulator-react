@@ -1,5 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
+import { Helmet } from 'react-helmet';
+
 
 function App() {
   const fag_data = {
@@ -56,6 +58,14 @@ function App() {
 
   return (
     <div className="App">
+      <Helmet>
+        <meta property="og:title" content="Your page title" />
+        <meta property="og:description" content="Your page description" />
+        <meta property="og:image" content="Your image URL" />
+      </Helmet>
+
+
+
       <h1>Informasjonsteknologi og medieproduksjon:</h1><br />
       
       <form>
