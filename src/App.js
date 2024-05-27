@@ -22,8 +22,10 @@ function App() {
   const [wholePercent, setWholePercent] = useState(0);
   const [halfPercent, setHalfPercent] = useState(0);
   const calculatePercent = () => {
-    setWholePercent((timerVekke / (parseInt(fag_data[yearID][fagID].ukeTimer) * 38) * 100).toFixed(2))
-    setHalfPercent((timerVekke / (parseInt(fag_data[yearID][fagID].ukeTimer) * 19) * 100).toFixed(2))
+    console.log(parseFloat(fag_data[yearID][fagID].ukeTimer));
+
+    setWholePercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 38) * 100).toFixed(2))
+    setHalfPercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 19) * 100).toFixed(2))
   }
 
 
@@ -54,22 +56,21 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Informasjonsteknologi og medieproduksjon:</h1>
+      <h1>Informasjonsteknologi og medieproduksjon:</h1><br />
       
       <form>
+        <label htmlFor="year">Velg ett årsløp:</label><br />
         <select name="year" id="year" onChange={handleYearChange}>
           <option value="null">Velg ett årsløp...</option>
           <option value="0">VG1</option>
           <option value="1">VG2 - IT</option>
           <option value="2">VG2 - Medie</option>
-        </select>
-
-        <h3>Hvor mange timer skal du ta fri?</h3>
+        </select><br /><br /><br />
 
         <label htmlFor="fag">Hvilket fag skal du ta fri?</label><br/>
         <select name="fag" id="fag" onChange={handleFagChange}>
           {optionsArray}
-        </select><br /><br />
+        </select><br /><br /><br />
 
         <label htmlFor="timer">Hvor mange timer skal du ta fri?</label><br />
         <input type="number" name="timer" id="timer" value={timerVekke} onChange={handleTimerVekkeChange} />
@@ -78,11 +79,17 @@ function App() {
 
       <button onClick={calculatePercent}>Regn ut:</button><br /><br />
 
-      <strong>Hele året:</strong>
-      <p>{wholePercent}%</p>
+      <div id="percents">
+        <div>
+          <strong>Hele året:</strong>
+          <p>{wholePercent}%</p>
+        </div>
 
-      <strong>Halvår:</strong>
-      <p>{halfPercent}%</p>
+        <div>
+          <strong>Halvår:</strong>
+          <p>{halfPercent}%</p>
+        </div>
+      </div>
     </div>
   );
 }
