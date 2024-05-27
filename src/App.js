@@ -2,17 +2,6 @@ import './App.css';
 import React, { useEffect, useState } from 'react';
 
 function App() {
-
-  //time ID:
-  //produsksjon og historiefortelling
-  //konseptutvikling og programmering   0
-  //teknologiforståelse                 1
-  //YFF                                 2
-  //matte                               3
-  //naturfag                            4
-  //gym                                 5
-  //engelsk                             6
-
   const fag_data = {
     "null": {},
     0: { 0: { name: "Produksjon og historiefortelling", ukeTimer: 5.5 }, 1: { name: "Konseptutvikling og programmering", ukeTimer: 5.5 }, 2: { name: "Teknologiforståelse", ukeTimer: 5.5 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:8},
