@@ -36,7 +36,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Index />} />
+        <Route index element={<Index redirect={true} />} />
+        <Route path="home" element={<Index redirect={false} />} />
         <Route path="studiefag" element={<Studiefag />} />
         <Route path="yrkesfag" element={<Yrkesfag />} />
       </Routes>
