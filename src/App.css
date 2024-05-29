@@ -164,6 +164,10 @@ button:active {
     font-size: 16px;
   }
 
+  h1 {
+    font-size: 22px;
+  }
+
   #index_page_buttons {
     display: grid;
     grid-template-columns: 1fr;
@@ -183,10 +187,19 @@ button:active {
     margin: 12px;
 
   }
+
+  select {
+    width: 90vw;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+  }
 }
 
 
 
-.app {
-  max-width: 100%;
-}
+/*.app {
+  width: 95vw !important; 
+  height: 98vh !important;
+}*/

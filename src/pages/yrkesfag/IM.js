@@ -9,7 +9,7 @@ const IM = () => {
   }
   
   return (
-    <div>
+    <div className='app'>
       <div className='breadCrumbsContainer'>
         <a href='/home' color='inherit'>Hjem</a>
         /
