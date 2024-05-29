@@ -1,7 +1,6 @@
 import App from '../App';
 import { useSearchParams } from "react-router-dom"
 
-
 import Bygg from '../pages/yrkesfag/Bygg';
 import Elektro from '../pages/yrkesfag/Elektro';
 import Frisør from '../pages/yrkesfag/Frisør';
@@ -23,6 +22,13 @@ const Yrkesfag = () => {
     return (
       <div>
         <h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>
+
+        <div className='breadCrumbsContainer'>
+          <a href='/' color='inherit'>Hjem</a>
+          /
+          <a href='/yrkesfag' color='text.primary'>Yrkesfag</a>
+        </div>
+
         {/*<App/>*/}
         <div id="linjeContainer">
           <a href="/yrkesfag?linjeId=0"> <div className="linje" id="bygg"> <h2>Bygg- og anleggsteknikk</h2> </div> </a>
@@ -79,14 +85,11 @@ const Yrkesfag = () => {
     return (
       <TIF />
     );
-
   } else {
     return (
       <h1>siden finnes ikke</h1>
     );
   }
-
-  
 };
 
 export default Yrkesfag;
