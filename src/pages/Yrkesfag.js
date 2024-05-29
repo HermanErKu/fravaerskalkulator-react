@@ -23,7 +23,7 @@ const Yrkesfag = () => {
   if (linjeId === null) {
     return (
       <div className='app'>
-        <h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>
+        {/*<h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>*/}
 
         <div className='breadCrumbsContainer'>
           <a href='/home' color='inherit'>Hjem</a>
@@ -44,7 +44,7 @@ const Yrkesfag = () => {
           <a href="/yrkesfag?linjeId=8"> <div className="linje" id="linje_page_buttons"> <h2>Salg, service og reiseliv</h2> </div> </a> 
           <a href="/yrkesfag?linjeId=9"> <div className="linje" id="linje_page_buttons"> <h2>Teknologi- og industrifag</h2> </div> </a>
         </div>
-        <h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>
+        {/*<h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>*/}
       </div>
     );
   } else if (linjeId === "0") {
