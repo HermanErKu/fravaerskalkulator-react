@@ -63,8 +63,8 @@ const Calculator = ({fag_data}) => {
         <select name="year" id="year" onChange={handleYearChange}>
           <option value="null">Velg ett årsløp...</option>
           <option value="0">VG1</option>
-          <option value="1">VG2 - IT</option>
-          <option value="2">VG2 - Medie</option>
+          {/*<option value="1">VG2 - IT</option>
+          <option value="2">VG2 - Medie</option>*/}
         </select><br /><br /><br />
 
         <label htmlFor="fag">Hvilket fag skal du ta fri?</label><br />
