@@ -42,8 +42,8 @@ export default function App() {
         <Route path="home" element={<Index redirect={false} />} />
         <Route path="studiefag" element={<Studiefag />} />
         <Route path="yrkesfag" element={<Yrkesfag />} />
-        <SpeedInsights />
       </Routes>
+      <SpeedInsights />
     </BrowserRouter>
   );
 }
