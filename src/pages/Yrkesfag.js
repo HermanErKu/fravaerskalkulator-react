@@ -22,7 +22,7 @@ const Yrkesfag = () => {
 
   if (linjeId === null) {
     return (
-      <div>
+      <div className='app'>
         <h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>
 
         <div className='breadCrumbsContainer'>
