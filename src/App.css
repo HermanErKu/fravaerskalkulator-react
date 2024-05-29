@@ -107,3 +107,25 @@ button:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+
+
+
+
+
+.index_page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 5%;
+}
+
+#index_page_buttons{
+  text-align: center;
+  height: 100px;
+  width: 100%;
+
+  border: 2px solid black;
+  justify-content: center;
+  justify-self: center;
+}
