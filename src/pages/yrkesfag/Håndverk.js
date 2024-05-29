@@ -21,6 +21,12 @@ const Håndverk = () => {
       <button onClick={setMinLinje}>Dette er min linje!</button>
 
       <h1>Håndverk</h1>
+      <Calculator
+        fag_data={{ 
+            "null": {}, 
+            0: { 0: { name: "Produktutvikling og skapende prosesser", ukeTimer: 5 }, 1: { name: "Materialer og teknikker", ukeTimer: 12 }, 2: { name: "YFF", ukeTimer: 6 }, 3: { name: "Engelsk", ukeTimer: 5 }, 4: { name: "Matte", ukeTimer: 3 }, 5: { name: "Naturfag", ukeTimer: 2 }, 6: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:7}, 
+        }}
+      />
     </div>
   );
 }
