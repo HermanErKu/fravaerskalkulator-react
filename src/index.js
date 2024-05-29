@@ -32,6 +32,8 @@ import Index from './pages/Index';
 import Studiefag from './pages/Studiefag';
 import Yrkesfag from './pages/Yrkesfag';
 
+import { SpeedInsights } from "@vercel/speed-insights/react"
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -40,6 +42,7 @@ export default function App() {
         <Route path="home" element={<Index redirect={false} />} />
         <Route path="studiefag" element={<Studiefag />} />
         <Route path="yrkesfag" element={<Yrkesfag />} />
+        <SpeedInsights />
       </Routes>
     </BrowserRouter>
   );
