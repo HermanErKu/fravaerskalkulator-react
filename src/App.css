@@ -139,7 +139,7 @@ button:active {
 
 #linje_page_buttons {
   text-align: center;
-  height: 100px;
+  height: 80px;
   width: 100%;
 
   border: 2px solid black;
@@ -177,5 +177,10 @@ button:active {
   #linje_page_buttons {
     display: grid;
     grid-template-columns: 1fr;
+  }
+
+  #linje_page_buttons > h2 {
+    margin: 12px;
+
   }
 }
