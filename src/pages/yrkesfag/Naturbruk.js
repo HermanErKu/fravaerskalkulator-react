@@ -1,4 +1,5 @@
 import Cookies from 'universal-cookie';
+import Calculator from '../Calculator';
 
 
 const Naturbruk = () => {
