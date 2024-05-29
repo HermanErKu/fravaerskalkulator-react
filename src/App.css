@@ -129,3 +129,21 @@ button:active {
   justify-content: center;
   justify-self: center;
 }
+
+
+#linjeContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5%;
+}
+
+#linje_page_buttons {
+  text-align: center;
+  height: 100px;
+  width: 100%;
+
+  border: 2px solid black;
+  justify-content: center;
+  justify-self: center;
+  border-radius: 25px;
+}

@@ -12,6 +12,8 @@ import Restaurant from '../pages/yrkesfag/Restaurant';
 import Salg from '../pages/yrkesfag/Salg';
 import TIF from '../pages/yrkesfag/TIF';
 
+import '../../src/App.css';
+
 
 const Yrkesfag = () => {
   const [queryParameters] = useSearchParams()
@@ -31,16 +33,16 @@ const Yrkesfag = () => {
 
         {/*<App/>*/}
         <div id="linjeContainer">
-          <a href="/yrkesfag?linjeId=0"> <div className="linje" id="bygg"> <h2>Bygg- og anleggsteknikk</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=1"> <div className="linje" id="elektro"> <h2>Elektro og datateknologi</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=2"> <div className="linje" id="frisør"> <h2>Frisør, blomster, interiør og eksponeringsdesign</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=3"> <div className="linje" id="helse"> <h2>Helse- og oppvekstfag</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=4"> <div className="linje" id="håndverk"> <h2>Håndverk, design og produktutvikling</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=5"> <div className="linje" id="im"> <h2>Informasjonsteknologi og medieproduksjon</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=6"> <div className="linje" id="naturbruk"> <h2>Naturbruk</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=7"> <div className="linje" id="restaurant"> <h2>Restaurant- og matfag</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=8"> <div className="linje" id="salg"> <h2>Salg, service og reiseliv</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=9"> <div className="linje" id="tif"> <h2>Teknologi- og industrifag</h2> </div> </a>
+          <a href="/yrkesfag?linjeId=0"> <div className="linje" id="linje_page_buttons"> <h2>Bygg- og anleggsteknikk</h2> </div> </a>
+          <a href="/yrkesfag?linjeId=1"> <div className="linje" id="linje_page_buttons"> <h2>Elektro og datateknologi</h2> </div> </a>
+          <a href="/yrkesfag?linjeId=2"> <div className="linje" id="linje_page_buttons"> <h2>Frisør, blomster, interiør og eksponeringsdesign</h2> </div> </a>
+          <a href="/yrkesfag?linjeId=3"> <div className="linje" id="linje_page_buttons"> <h2>Helse- og oppvekstfag</h2> </div> </a>
+          <a href="/yrkesfag?linjeId=4"> <div className="linje" id="linje_page_buttons"> <h2>Håndverk, design og produktutvikling</h2> </div> </a> 
+          <a href="/yrkesfag?linjeId=5"> <div className="linje" id="linje_page_buttons"> <h2>Informasjonsteknologi og medieproduksjon</h2> </div> </a>
+          <a href="/yrkesfag?linjeId=6"> <div className="linje" id="linje_page_buttons"> <h2>Naturbruk</h2> </div> </a> 
+          <a href="/yrkesfag?linjeId=7"> <div className="linje" id="linje_page_buttons"> <h2>Restaurant- og matfag</h2> </div> </a> 
+          <a href="/yrkesfag?linjeId=8"> <div className="linje" id="linje_page_buttons"> <h2>Salg, service og reiseliv</h2> </div> </a> 
+          <a href="/yrkesfag?linjeId=9"> <div className="linje" id="linje_page_buttons"> <h2>Teknologi- og industrifag</h2> </div> </a>
         </div>
         <h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>
       </div>
