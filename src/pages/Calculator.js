@@ -67,7 +67,7 @@ const Calculator = ({fag_data}) => {
 
   return (
     <div className="App">
-      <h1>Informasjonsteknologi og medieproduksjon:</h1><br />
+      {/*<h1>Informasjonsteknologi og medieproduksjon:</h1><br />*/}
 
       <form>
         <label htmlFor="year">Velg ett årsløp:</label><br />
