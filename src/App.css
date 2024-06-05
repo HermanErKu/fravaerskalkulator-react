@@ -210,10 +210,20 @@ a:visited, a {
   color: black;
 }
 
+a{
+  text-decoration: none;
+}
+
+
+
 #breadcrumbsLink {
   text-decoration: underline;
 }
 
-a{
-  text-decoration: none;
+.breadCrumbsContainer {
+  padding-bottom: 20px;
+}
+
+body{
+  margin: 8px;
 }
