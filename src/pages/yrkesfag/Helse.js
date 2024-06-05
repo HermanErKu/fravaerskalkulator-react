@@ -6,7 +6,7 @@ const Helse = () => {
   const cookies = new Cookies();
   
   const setMinLinje = () => {
-    cookies.set('linjeCookie', '/yrkesfag?linjeId=4', { path: '/' });
+    cookies.set('linjeCookie', '/yrkesfag?linjeId=3', { path: '/' });
   }
   
   return (
