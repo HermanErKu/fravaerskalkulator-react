@@ -21,7 +21,7 @@ const Frisør = () => {
       
       <button onClick={setMinLinje}>Dette er min linje!</button>
 
-      <h1>Frisør</h1>
+      <h1>Frisør, blomster, interiør og eksponeringsdesign</h1>
       <Calculator
         fag_data={{ 
             0: { name:"Velg ett årsløp..." }, 

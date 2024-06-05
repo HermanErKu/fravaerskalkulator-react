@@ -21,7 +21,7 @@ const Elektro = () => {
 
       <button onClick={setMinLinje}>Dette er min linje!</button>
 
-      <h1>Elektro</h1>
+      <h1>Elektro og datateknologi</h1>
       <Calculator
         fag_data={{ 
             0: { name:"Velg ett årsløp..." }, 

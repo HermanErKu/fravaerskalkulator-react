@@ -21,7 +21,7 @@ const Restaurant = () => {
 
       <button onClick={setMinLinje}>Dette er min linje!</button>
 
-      <h1>Restaurant</h1>
+      <h1>Restaurant- og matfag</h1>
       <Calculator
         fag_data={{ 
             0: { name:"Velg ett årsløp..." }, 

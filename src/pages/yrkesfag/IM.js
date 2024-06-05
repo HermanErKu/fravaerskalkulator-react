@@ -20,7 +20,7 @@ const IM = () => {
 
       <button onClick={setMinLinje}>Dette er min linje!</button>
 
-      <h1>IM</h1>
+      <h1>Informasjonsteknologi og medieproduksjon</h1>
       <Calculator
         fag_data={{ 
             0: { name:"Velg ett årsløp..." }, 
