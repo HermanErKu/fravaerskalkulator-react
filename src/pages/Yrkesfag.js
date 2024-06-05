@@ -36,8 +36,8 @@ const Yrkesfag = () => {
           <a href="/yrkesfag?linjeId=0"> <div className="linje" id="linje_page_buttons"> <h2>Bygg- og anleggsteknikk</h2> </div> </a>
           <a href="/yrkesfag?linjeId=1"> <div className="linje" id="linje_page_buttons"> <h2>Elektro og datateknologi</h2> </div> </a>
           <a href="/yrkesfag?linjeId=2"> <div className="linje" id="linje_page_buttons"> <h2>Frisør, blomster, interiør og eksponeringsdesign</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=4"> <div className="linje" id="linje_page_buttons"> <h2>Helse- og oppvekstfag</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=3"> <div className="linje" id="linje_page_buttons"> <h2>Håndverk, design og produktutvikling</h2> </div> </a> 
+          <a href="/yrkesfag?linjeId=3"> <div className="linje" id="linje_page_buttons"> <h2>Helse- og oppvekstfag</h2> </div> </a>
+          <a href="/yrkesfag?linjeId=4"> <div className="linje" id="linje_page_buttons"> <h2>Håndverk, design og produktutvikling</h2> </div> </a> 
           <a href="/yrkesfag?linjeId=5"> <div className="linje" id="linje_page_buttons"> <h2>Informasjonsteknologi og medieproduksjon</h2> </div> </a>
           <a href="/yrkesfag?linjeId=6"> <div className="linje" id="linje_page_buttons"> <h2>Naturbruk</h2> </div> </a> 
           <a href="/yrkesfag?linjeId=7"> <div className="linje" id="linje_page_buttons"> <h2>Restaurant- og matfag</h2> </div> </a> 
