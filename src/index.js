@@ -28,7 +28,9 @@ reportWebVitals();
 
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Index from './pages/Index';
+import PageNotFound from './pages/PageNotFound';
 import Studiefag from './pages/Studiefag';
 import Yrkesfag from './pages/Yrkesfag';
 
@@ -43,6 +45,8 @@ export default function App() {
         <Route path="home" element={<Index redirect={false} />} />
         <Route path="studiefag" element={<Studiefag />} />
         <Route path="yrkesfag" element={<Yrkesfag />} />
+
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <SpeedInsights />
       <Analytics />
