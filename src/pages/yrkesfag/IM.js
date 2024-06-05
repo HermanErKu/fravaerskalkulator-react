@@ -11,11 +11,11 @@ const IM = () => {
   return (
     <div className='app'>
       <div className='breadCrumbsContainer'>
-        <a href='/home' color='inherit'>Hjem</a>
+        <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
         /
-        <a href='/yrkesfag' color='text.primary'>Yrkesfag</a>
+        <a id='breadcrumbsLink' href='/yrkesfag' color='text.primary'>Yrkesfag</a>
         /
-        <a href='/yrkesfag?linjeId=5' color='text.primary'>Informasjonsteknologi og medieproduksjon</a>
+        <a id='breadcrumbsLink' href='/yrkesfag?linjeId=5' color='text.primary'>Informasjonsteknologi og medieproduksjon</a>
       </div>
 
       <button onClick={setMinLinje}>Dette er min linje!</button>

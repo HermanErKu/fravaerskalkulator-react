@@ -210,6 +210,10 @@ a:visited, a {
   color: black;
 }
 
+#breadcrumbsLink {
+  text-decoration: underline;
+}
+
 a{
   text-decoration: none;
 }

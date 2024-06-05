@@ -26,9 +26,9 @@ const Yrkesfag = () => {
         {/*<h2 style={{ textAlign: 'center' }}>⚠️ Siden er under oppussing! ⚠️</h2>*/}
 
         <div className='breadCrumbsContainer'>
-          <a href='/home' color='inherit'>Hjem</a>
+          <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
           /
-          <a href='/yrkesfag' color='text.primary'>Yrkesfag</a>
+          <a id='breadcrumbsLink' href='/yrkesfag' color='text.primary'>Yrkesfag</a>
         </div>
 
         {/*<App/>*/}

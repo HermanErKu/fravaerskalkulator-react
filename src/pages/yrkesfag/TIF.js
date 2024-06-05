@@ -12,11 +12,11 @@ const TIF = () => {
   return (
     <div>
       <div className='breadCrumbsContainer'>
-        <a href='/home' color='inherit'>Hjem</a>
+        <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
         /
-        <a href='/yrkesfag' color='text.primary'>Yrkesfag</a>
+        <a id='breadcrumbsLink' href='/yrkesfag' color='text.primary'>Yrkesfag</a>
         /
-        <a href='/yrkesfag?linjeId=9' color='text.primary'>Teknologi- og industrifag</a>
+        <a id='breadcrumbsLink' href='/yrkesfag?linjeId=9' color='text.primary'>Teknologi- og industrifag</a>
       </div>
 
       <button onClick={setMinLinje}>Dette er min linje!</button>

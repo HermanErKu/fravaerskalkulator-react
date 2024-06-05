@@ -12,11 +12,11 @@ const Håndverk = () => {
   return (
     <div>
       <div className='breadCrumbsContainer'>
-        <a href='/home' color='inherit'>Hjem</a>
+        <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
         /
-        <a href='/yrkesfag' color='text.primary'>Yrkesfag</a>
+        <a id='breadcrumbsLink' href='/yrkesfag' color='text.primary'>Yrkesfag</a>
         /
-        <a href='/yrkesfag?linjeId=4' color='text.primary'>Håndverk, design og produktutvikling</a>
+        <a id='breadcrumbsLink' href='/yrkesfag?linjeId=4' color='text.primary'>Håndverk, design og produktutvikling</a>
       </div>
 
       <button onClick={setMinLinje}>Dette er min linje!</button>
