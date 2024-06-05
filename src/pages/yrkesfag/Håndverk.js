@@ -16,7 +16,7 @@ const Håndverk = () => {
         /
         <a href='/yrkesfag' color='text.primary'>Yrkesfag</a>
         /
-        <a href='/yrkesfag?linjeId=3' color='text.primary'>Håndverk, design og produktutvikling</a>
+        <a href='/yrkesfag?linjeId=4' color='text.primary'>Håndverk, design og produktutvikling</a>
       </div>
 
       <button onClick={setMinLinje}>Dette er min linje!</button>
