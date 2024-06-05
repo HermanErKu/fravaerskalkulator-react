@@ -204,3 +204,12 @@ button:active {
   width: 95vw !important; 
   height: 98vh !important;
 }*/
+
+
+a:visited {
+  color: black;
+}
+
+a{
+  text-decoration: none;
+}
