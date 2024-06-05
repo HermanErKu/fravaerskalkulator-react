@@ -24,8 +24,8 @@ const Elektro = () => {
       <h1>Elektro</h1>
       <Calculator
         fag_data={{ 
-            "null": {}, 
-            0: { 0: { name: "Elektroniske kretser og nettverk", ukeTimer: 7 }, 1: { name: "Energi- og styresystemer", ukeTimer: 10.5 }, 2: { name: "YFF", ukeTimer: 6 }, 3: { name: "Engelsk", ukeTimer: 5 }, 4: { name: "Matte", ukeTimer: 3 }, 5: { name: "Naturfag", ukeTimer: 2 }, 6: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:7}, 
+            0: { name:"Velg ett årsløp..." }, 
+            1: { 0: { name: "Elektroniske kretser og nettverk", ukeTimer: 7 }, 1: { name: "Energi- og styresystemer", ukeTimer: 10.5 }, 2: { name: "YFF", ukeTimer: 6 }, 3: { name: "Engelsk", ukeTimer: 5 }, 4: { name: "Matte", ukeTimer: 3 }, 5: { name: "Naturfag", ukeTimer: 2 }, 6: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:7}, 
         }}
       />
     </div>

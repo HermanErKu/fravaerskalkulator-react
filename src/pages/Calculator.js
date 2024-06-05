@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 
 const Calculator = ({fag_data}) => {
   /*const fag_data = {
-    "null": {},
-    0: { 0: { name: "Produksjon og historiefortelling", ukeTimer: 5.5 }, 1: { name: "Konseptutvikling og programmering", ukeTimer: 5.5 }, 2: { name: "Teknologiforståelse", ukeTimer: 5.5 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name: "VG1", fag: 8 },
+    0: {},
+    1: { 0: { name: "Produksjon og historiefortelling", ukeTimer: 5.5 }, 1: { name: "Konseptutvikling og programmering", ukeTimer: 5.5 }, 2: { name: "Teknologiforståelse", ukeTimer: 5.5 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name: "VG1", fag: 8 },
     1: { 0: { name: "Brukerstøtte", ukeTimer: 5 }, 1: { name: "Driftsstøtte", ukeTimer: 6 }, 2: { name: "Utvikling", ukeTimer: 6 }, 3: { name: "YFF", ukeTimer: 9 }, 4: { name: "Norsk", ukeTimer: 4 }, 5: { name: "Samfunnsfag", ukeTimer: 3 }, 6: { name: "Gym", ukeTimer: 2 }, name: "VG2 - IT", fag: 7 },
     2: { 0: { name: "Design og visualisering", ukeTimer: 5.5 }, 1: { name: "Konseptutvikling og kommunikasjon", ukeTimer: 5.5 }, 2: { name: "Teknologi og produksjon", ukeTimer: 5.5 }, 3: { name: "YFF", ukeTimer: 9 }, 4: { name: "Norsk", ukeTimer: 4 }, 5: { name: "Samfunnsfag", ukeTimer: 3 }, 6: { name: "Gym", ukeTimer: 2 }, name: "VG2 - Medie", fag: 7 },
   }*/
@@ -43,6 +43,7 @@ const Calculator = ({fag_data}) => {
     setFagID(0);
   }
 
+
   /*const [optionsElement, setOptionsElement] = useState("");
   console.log(fag_data[fagID].fag);
   for (let x = 0; x < fag_data[fagID].fag; x++) {
@@ -51,6 +52,16 @@ const Calculator = ({fag_data}) => {
   }*/
 
 
+  console.log(fag_data);
+  const keys = Object.keys(fag_data);
+
+  const yearsData = [];
+  for (let x = 0; x < keys.length; x++) {
+    const name = fag_data[x]["name"];
+    const fag = x;
+    yearsData.push([name,fag]);
+  }
+  console.log(yearsData);
 
 
 
@@ -61,10 +72,17 @@ const Calculator = ({fag_data}) => {
       <form>
         <label htmlFor="year">Velg ett årsløp:</label><br />
         <select name="year" id="year" onChange={handleYearChange}>
-          <option value="null">Velg ett årsløp...</option>
-          <option value="0">VG1</option>
+          {/*<option value="null">Velg ett årsløp...</option>
+          <option value="0">VG1</option>*/}
+
           {/*<option value="1">VG2 - IT</option>
           <option value="2">VG2 - Medie</option>*/}
+          
+          {
+            yearsData.map((year) => (
+              <option key={year[1]} value={year[1]}>{year[0]}</option>
+            ))
+          }
         </select><br /><br /><br />
 
         <label htmlFor="fag">Hvilket fag skal du ta fri?</label><br />

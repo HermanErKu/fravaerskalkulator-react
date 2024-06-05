@@ -24,8 +24,8 @@ const Restaurant = () => {
       <h1>Restaurant</h1>
       <Calculator
         fag_data={{ 
-            "null": {}, 
-            0: { 0: { name: "Bransje og arbeidsliv", ukeTimer: 5 }, 1: { name: "Råvare, produksjon og kvalitet", ukeTimer: 12 }, 2: { name: "YFF", ukeTimer: 6 }, 3: { name: "Engelsk", ukeTimer: 5 }, 4: { name: "Matte", ukeTimer: 3 }, 5: { name: "Naturfag", ukeTimer: 2 }, 6: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:7}, 
+            0: { name:"Velg ett årsløp..." }, 
+            1: { 0: { name: "Bransje og arbeidsliv", ukeTimer: 5 }, 1: { name: "Råvare, produksjon og kvalitet", ukeTimer: 12 }, 2: { name: "YFF", ukeTimer: 6 }, 3: { name: "Engelsk", ukeTimer: 5 }, 4: { name: "Matte", ukeTimer: 3 }, 5: { name: "Naturfag", ukeTimer: 2 }, 6: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:7}, 
         }}
       />
     </div>

@@ -25,8 +25,8 @@ const TIF = () => {
       
       <Calculator
         fag_data={{ 
-            "null": {}, 
-            0: { 0: { name: "Produktivitet og kvalitetsstyring", ukeTimer: 5 }, 1: { name: "Konstruksjons- og styringsteknikk", ukeTimer: 5 }, 2: { name: "Produksjon og tjenester", ukeTimer: 7 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:8}, 
+            0: { name:"Velg ett årsløp..." }, 
+            1: { 0: { name: "Produktivitet og kvalitetsstyring", ukeTimer: 5 }, 1: { name: "Konstruksjons- og styringsteknikk", ukeTimer: 5 }, 2: { name: "Produksjon og tjenester", ukeTimer: 7 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name:"VG1", fag:8}, 
         }}
       />
     </div>

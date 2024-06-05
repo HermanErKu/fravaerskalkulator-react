@@ -24,8 +24,8 @@ const Salg = () => {
       <h1>Salg, service og reiseliv</h1>
       <Calculator
         fag_data={{ 
-            "null": {}, 
-            0: { 0: { name: "Kultur og samhandling", ukeTimer: 5 }, 1: { name: "Forretningsdrift", ukeTimer: 6 }, 2: { name: "Markedsføring og innovasjon", ukeTimer: 6 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Norsk", ukeTimer: 4 }, 5: { name: "Samfunnsfag", ukeTimer: 3 }, 6: { name: "Gym", ukeTimer: 2 }, name:"VG2 - IT", fag:7}, 
+            0: { name:"Velg ett årsløp..." }, 
+            1: { 0: { name: "Kultur og samhandling", ukeTimer: 5 }, 1: { name: "Forretningsdrift", ukeTimer: 6 }, 2: { name: "Markedsføring og innovasjon", ukeTimer: 6 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Norsk", ukeTimer: 4 }, 5: { name: "Samfunnsfag", ukeTimer: 3 }, 6: { name: "Gym", ukeTimer: 2 }, name:"VG2 - IT", fag:7}, 
         }}
       />
     </div>
