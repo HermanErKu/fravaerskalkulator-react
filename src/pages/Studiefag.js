@@ -11,7 +11,7 @@ const Studiefag = () => {
 
   const cookies = new Cookies();
   const setMinLinje = () => {
-    cookies.set('linjeCookie', '/yrkesfag?linjeId='+linjeId, { path: '/' });
+    cookies.set('linjeCookie', '/studiefag/'+linjeId+'?linjeId='+linjeId, { path: '/' });
   }
 
   const studiefag_data = {
