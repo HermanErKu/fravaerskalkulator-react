@@ -49,6 +49,7 @@ export default function App() {
         <Route index element={<Home redirect={true} />} />
         <Route path="home" element={<Home redirect={false} />} />
         <Route path="studiefag" element={<Studiefag />} />
+        <Route path="studiefag/*" element={<Studiefag />} />
         <Route path="yrkesfag" element={<Yrkesfag />} />
 
         <Route path="apply" element={<Apply />} />

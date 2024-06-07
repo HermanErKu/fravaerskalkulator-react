@@ -25,11 +25,11 @@ const Home = ({redirect}) => {
         </div>
 
         <div id="linjeContainer">
-          <a href="/studiefag?linjeId=0"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Idrettsfag</h2> </div> </a>
-          <a href="/studiefag?linjeId=1"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Kunst, design og arkitektur</h2> </div> </a>
-          <a href="/studiefag?linjeId=2"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Medier og kommunikasjon</h2> </div> </a>
-          <a href="/studiefag?linjeId=3"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Musikk, dans og drama</h2> </div> </a>
-          <a href="/studiefag?linjeId=4"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Studiespesialisering</h2> </div> </a>
+          <a href="/studiefag/0?linjeId=0"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Idrettsfag</h2> </div> </a>
+          <a href="/studiefag/1?linjeId=1"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Kunst, design og arkitektur</h2> </div> </a>
+          <a href="/studiefag/2?linjeId=2"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Medier og kommunikasjon</h2> </div> </a>
+          <a href="/studiefag/3?linjeId=3"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Musikk, dans og drama</h2> </div> </a>
+          <a href="/studiefag/4?linjeId=4"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Studiespesialisering</h2> </div> </a>
         </div>
 
         <br />
