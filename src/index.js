@@ -32,7 +32,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from './pages/Index';
 import PageNotFound from './pages/PageNotFound';
 import Studiefag from './pages/Studiefag';
-import Yrkesfag2 from './pages/Yrkesfag2';
+import Yrkesfag2 from './pages/Yrkesfag';
 
 import Home from "./pages/Home";
 import Apply from "./pages/Apply";
