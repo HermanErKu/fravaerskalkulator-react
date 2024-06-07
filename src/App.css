@@ -134,7 +134,8 @@ button:active {
 #linjeContainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5%;
+  /*gap: 5%;*/
+  gap: 15px;
 }
 
 #linje_page_buttons {
