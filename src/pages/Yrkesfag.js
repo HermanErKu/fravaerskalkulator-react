@@ -8,12 +8,6 @@ const Yrkesfag2 = () => {
   const [queryParameters] = useSearchParams()
   const linjeId = queryParameters.get("linjeId")
 
-
-  const cookies = new Cookies();
-  const setMinLinje = () => {
-    cookies.set('linjeCookie', '/yrkesfag/' + linjeId + '?linjeId=' + linjeId, { path: '/' });
-  }
-
   const yrkesfag_data = {
     0: {
       name: "Bygg- og anleggsteknikk",
@@ -90,6 +84,13 @@ const Yrkesfag2 = () => {
   }
 
 
+  const cookies = new Cookies();
+  const setMinLinje = () => {
+    cookies.set('linjeCookie', '/yrkesfag/' + linjeId + '?linjeId=' + linjeId, { path: '/' });
+    toast.success(yrkesfag_data[parseInt(linjeId)]["name"]+" er nå lagret som din linje!")
+  }
+
+
   const fag_data = yrkesfag_data[parseInt(linjeId)]["year_data"]
 
   return (
@@ -99,6 +100,8 @@ const Yrkesfag2 = () => {
         /
         <a id='breadcrumbsLink' href={'/yrkesfag/' + linjeId + '?linjeId=' + linjeId} color='text.primary'>{yrkesfag_data[parseInt(linjeId)]["name"]}</a>
       </div>
+
+      <button onClick={(setMinLinje)}>Dette er min linje!</button>
 
       <Calculator
         fag_data={fag_data}
