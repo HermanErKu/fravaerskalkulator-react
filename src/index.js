@@ -34,6 +34,8 @@ import PageNotFound from './pages/PageNotFound';
 import Studiefag from './pages/Studiefag';
 import Yrkesfag from './pages/Yrkesfag';
 
+import Apply from "./pages/Apply";
+
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
 
@@ -45,6 +47,8 @@ export default function App() {
         <Route path="home" element={<Index redirect={false} />} />
         <Route path="studiefag" element={<Studiefag />} />
         <Route path="yrkesfag" element={<Yrkesfag />} />
+
+        <Route path="apply" element={<Apply />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
