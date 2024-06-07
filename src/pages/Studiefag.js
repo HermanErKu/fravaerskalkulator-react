@@ -59,7 +59,7 @@ const Studiefag = () => {
   const cookies = new Cookies();
   const setMinLinje = () => {
     cookies.set('linjeCookie', '/studiefag/' + linjeId + '?linjeId=' + linjeId, { path: '/' });
-    toast.success('"'+yrkesfag_data[parseInt(linjeId)]["name"]+'"'+' er nå lagret som din linje!', {duration:3000})
+    toast.success('"'+studiefag_data[parseInt(linjeId)]["name"]+'"'+' er nå lagret som din linje!', {duration:3000})
   }
 
 
