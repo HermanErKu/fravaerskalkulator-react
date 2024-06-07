@@ -35,16 +35,16 @@ const Home = ({redirect}) => {
         <br />
 
         <div id="linjeContainer">
-          <a href="/yrkesfag?linjeId=0"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Bygg- og anleggsteknikk</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=1"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Elektro og datateknologi</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=2"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Frisør, blomster, interiør og eksponeringsdesign</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=3"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Helse- og oppvekstfag</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=4"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Håndverk, design og produktutvikling</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=5"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Informasjonsteknologi og medieproduksjon</h2> </div> </a>
-          <a href="/yrkesfag?linjeId=6"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Naturbruk</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=7"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Restaurant- og matfag</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=8"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Salg, service og reiseliv</h2> </div> </a> 
-          <a href="/yrkesfag?linjeId=9"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Teknologi- og industrifag</h2> </div> </a>
+          <a href="/yrkesfag/0?linjeId=0"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Bygg- og anleggsteknikk</h2> </div> </a>
+          <a href="/yrkesfag/1?linjeId=1"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Elektro og datateknologi</h2> </div> </a>
+          <a href="/yrkesfag/2?linjeId=2"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Frisør, blomster, interiør og eksponeringsdesign</h2> </div> </a>
+          <a href="/yrkesfag/3?linjeId=3"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Helse- og oppvekstfag</h2> </div> </a>
+          <a href="/yrkesfag/4?linjeId=4"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Håndverk, design og produktutvikling</h2> </div> </a> 
+          <a href="/yrkesfag/5?linjeId=5"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Informasjonsteknologi og medieproduksjon</h2> </div> </a>
+          <a href="/yrkesfag/6?linjeId=6"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Naturbruk</h2> </div> </a> 
+          <a href="/yrkesfag/7?linjeId=7"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Restaurant- og matfag</h2> </div> </a> 
+          <a href="/yrkesfag/8?linjeId=8"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Salg, service og reiseliv</h2> </div> </a> 
+          <a href="/yrkesfag/9?linjeId=9"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Teknologi- og industrifag</h2> </div> </a>
         </div>
       </div>
   )
