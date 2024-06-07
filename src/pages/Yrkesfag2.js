@@ -97,7 +97,7 @@ const Yrkesfag2 = () => {
       <div className='breadCrumbsContainer'>
         <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
         /
-        <a id='breadcrumbsLink' href={'/studiefag/' + linjeId + '?linjeId=' + linjeId} color='text.primary'>{yrkesfag_data[parseInt(linjeId)]["name"]}</a>
+        <a id='breadcrumbsLink' href={'/yrkesfag/' + linjeId + '?linjeId=' + linjeId} color='text.primary'>{yrkesfag_data[parseInt(linjeId)]["name"]}</a>
       </div>
 
       <Calculator
