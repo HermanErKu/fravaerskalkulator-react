@@ -16,13 +16,23 @@ const Home = ({redirect}) => {
       return <Navigate to={linjeCookie} replace={true} />      
     }
   }
-  
+
 
   return (
     <div className='app'>
         <div className='breadCrumbsContainer'>
           <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
         </div>
+
+        <div id="linjeContainer">
+          <a href="/studiefag?linjeId=0"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Idrettsfag</h2> </div> </a>
+          <a href="/studiefag?linjeId=1"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Kunst, design og arkitektur</h2> </div> </a>
+          <a href="/studiefag?linjeId=2"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Medier og kommunikasjon</h2> </div> </a>
+          <a href="/studiefag?linjeId=3"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Musikk, dans og drama</h2> </div> </a>
+          <a href="/studiefag?linjeId=4"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Studiespesialisering</h2> </div> </a>
+        </div>
+
+        <br />
 
         <div id="linjeContainer">
           <a href="/yrkesfag?linjeId=0"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Bygg- og anleggsteknikk</h2> </div> </a>
@@ -35,12 +45,6 @@ const Home = ({redirect}) => {
           <a href="/yrkesfag?linjeId=7"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Restaurant- og matfag</h2> </div> </a> 
           <a href="/yrkesfag?linjeId=8"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Salg, service og reiseliv</h2> </div> </a> 
           <a href="/yrkesfag?linjeId=9"> <div className="yrkesfag_button_home" id="linje_page_buttons"> <h2>Teknologi- og industrifag</h2> </div> </a>
-
-          <a href="/studiefag?linjeId=0"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Idrettsfag</h2> </div> </a>
-          <a href="/studiefag?linjeId=1"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Kunst, design og arkitektur</h2> </div> </a>
-          <a href="/studiefag?linjeId=2"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Medier og kommunikasjon</h2> </div> </a>
-          <a href="/studiefag?linjeId=3"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Musikk, dans og drama</h2> </div> </a>
-          <a href="/studiefag?linjeId=4"> <div className="studiefag_button_home" id="linje_page_buttons"> <h2>Studiespesialisering</h2> </div> </a>
         </div>
       </div>
   )
