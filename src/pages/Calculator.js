@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 
 const Calculator = ({fag_data}) => {
@@ -11,12 +11,12 @@ const Calculator = ({fag_data}) => {
 
   const [fagID, setFagID] = useState(0);
   const handleFagChange = (event) => {
-    setFagID(event.target.value)
+    setFagID(event.target.value);
   }
 
   const [timerVekke, setTimerVekke] = useState(0);
   const handleTimerVekkeChange = (event) => {
-    setTimerVekke(event.target.value)
+    setTimerVekke(event.target.value);
   }
 
   const [wholePercent, setWholePercent] = useState(0);
@@ -24,8 +24,8 @@ const Calculator = ({fag_data}) => {
   const calculatePercent = () => {
     console.log(parseFloat(fag_data[yearID][fagID].ukeTimer));
 
-    setWholePercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 38) * 100).toFixed(2))
-    setHalfPercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 19) * 100).toFixed(2))
+    setWholePercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 38) * 100).toFixed(2));
+    setHalfPercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 19) * 100).toFixed(2));
   }
 
 
@@ -64,6 +64,14 @@ const Calculator = ({fag_data}) => {
   console.log(yearsData);
 
 
+  
+  const timerRef = useRef(null);
+  const handleFocus = () => {
+    if (timerRef.current) {
+      timerRef.current.select();
+    }
+  };
+
 
   return (
     <div className="App">
@@ -91,7 +99,7 @@ const Calculator = ({fag_data}) => {
         </select><br /><br /><br />
 
         <label htmlFor="timer">Hvor mange timer skal du ta fri?</label><br />
-        <input type="number" name="timer" id="timer" value={timerVekke} onChange={handleTimerVekkeChange} />
+        <input type="number" name="timer" id="timer" value={timerVekke} onChange={handleTimerVekkeChange} onFocus={handleFocus} ref={timerRef} />
 
       </form>
 
