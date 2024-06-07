@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import Cookies from 'universal-cookie';
 import Calculator from './Calculator';
 import '../../src/App.css';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const Yrkesfag2 = () => {
@@ -87,7 +88,7 @@ const Yrkesfag2 = () => {
   const cookies = new Cookies();
   const setMinLinje = () => {
     cookies.set('linjeCookie', '/yrkesfag/' + linjeId + '?linjeId=' + linjeId, { path: '/' });
-    toast.success(yrkesfag_data[parseInt(linjeId)]["name"]+" er nå lagret som din linje!")
+    toast.success('"'+yrkesfag_data[parseInt(linjeId)]["name"]+'"'+' er nå lagret som din linje!', {duration:3000})
   }
 
 
@@ -106,6 +107,8 @@ const Yrkesfag2 = () => {
       <Calculator
         fag_data={fag_data}
       />
+
+      <Toaster />
     </div>
   );
 };

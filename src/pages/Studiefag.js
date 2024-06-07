@@ -2,17 +2,12 @@ import { useSearchParams } from "react-router-dom";
 import Cookies from 'universal-cookie';
 import Calculator from './Calculator';
 import '../../src/App.css';
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const Studiefag = () => {
   const [queryParameters] = useSearchParams()
   const linjeId = queryParameters.get("linjeId")
-
-
-  const cookies = new Cookies();
-  const setMinLinje = () => {
-    cookies.set('linjeCookie', '/studiefag/'+linjeId+'?linjeId='+linjeId, { path: '/' });
-  }
 
   const studiefag_data = {
     0: { 
@@ -61,6 +56,13 @@ const Studiefag = () => {
   }
 
 
+  const cookies = new Cookies();
+  const setMinLinje = () => {
+    cookies.set('linjeCookie', '/studiefag/' + linjeId + '?linjeId=' + linjeId, { path: '/' });
+    toast.success('"'+yrkesfag_data[parseInt(linjeId)]["name"]+'"'+' er nå lagret som din linje!', {duration:3000})
+  }
+
+
   const fag_data = studiefag_data[parseInt(linjeId)]["year_data"]
 
   return (
@@ -71,9 +73,13 @@ const Studiefag = () => {
         <a id='breadcrumbsLink' href={'/studiefag/'+linjeId+'?linjeId='+linjeId} color='text.primary'>{studiefag_data[parseInt(linjeId)]["name"]}</a>
       </div>
 
+      <button onClick={(setMinLinje)}>Dette er min linje!</button>
+
       <Calculator
         fag_data={fag_data}
       />
+
+      <Toaster />
     </div>
   );
 };
