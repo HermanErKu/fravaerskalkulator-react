@@ -32,7 +32,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from './pages/Index';
 import PageNotFound from './pages/PageNotFound';
 import Studiefag from './pages/Studiefag';
-import Yrkesfag from './pages/Yrkesfag';
+import Yrkesfag2 from './pages/Yrkesfag2';
 
 import Home from "./pages/Home";
 import Apply from "./pages/Apply";
@@ -52,8 +52,8 @@ export default function App() {
         <Route path="studiefag" element={<Studiefag />} />
         <Route path="studiefag/*" element={<Studiefag />} />
 
-        <Route path="yrkesfag" element={<Yrkesfag />} />
-        <Route path="yrkesfag/*" element={<Yrkesfag />} />
+        <Route path="yrkesfag" element={<Yrkesfag2 />} />
+        <Route path="yrkesfag/*" element={<Yrkesfag2 />} />
 
         <Route path="apply" element={<Apply />} />
 
