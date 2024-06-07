@@ -149,14 +149,14 @@ button:active {
 }
 
 .yrkesfag_button_home {
-  border: 3px solid #8ac75a;
+  border: 2px solid #8ac75a;
 }
 .yrkesfag_button_home:hover, .yrkesfag_button_home:active {
   background-color: #e8f4de;
 }
 
 .studiefag_button_home {
-  border: 3px solid #fcc025;
+  border: 2px solid #fcc025;
 }
 .studiefag_button_home:hover, .studiefag_button_home:active {
   background-color: #fff1d0;
