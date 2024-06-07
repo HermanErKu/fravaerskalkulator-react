@@ -6,7 +6,17 @@ import { Navigate } from "react-router-dom";
 
 
 const Home = ({redirect}) => {
+  const cookies = new Cookies();
 
+  let linjeCookie = cookies.get('linjeCookie');
+  if (linjeCookie === undefined) {
+    console.log("LinjeCookie is undefined");
+  } else {
+    if (redirect === true){
+      return <Navigate to={linjeCookie} replace={true} />      
+    }
+  }
+  
 
   return (
     <div className='app'>
