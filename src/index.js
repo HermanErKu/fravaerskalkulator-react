@@ -34,6 +34,7 @@ import PageNotFound from './pages/PageNotFound';
 import Studiefag from './pages/Studiefag';
 import Yrkesfag from './pages/Yrkesfag';
 
+import Home from "./pages/Home";
 import Apply from "./pages/Apply";
 
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -43,8 +44,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route index element={<Index redirect={true} />} />
-        <Route path="home" element={<Index redirect={false} />} />
+        {/*<Route index element={<Index redirect={true} />} />
+        <Route path="home" element={<Index redirect={false} />} />*/}
+        <Route index element={<Home redirect={true} />} />
+        <Route path="home" element={<Home redirect={false} />} />
         <Route path="studiefag" element={<Studiefag />} />
         <Route path="yrkesfag" element={<Yrkesfag />} />
 
