@@ -35,14 +35,14 @@ const Yrkesfag2 = () => {
       name: "Helse- og oppvekstfag",
       year_data: {
         0: { name: "Velg ett årsløp..." },
-        1: { 0: { name: "Produktutvikling og skapende prosesser", ukeTimer: 5 }, 1: { name: "Materialer og teknikker", ukeTimer: 12 }, 2: { name: "YFF", ukeTimer: 6 }, 3: { name: "Engelsk", ukeTimer: 5 }, 4: { name: "Matte", ukeTimer: 3 }, 5: { name: "Naturfag", ukeTimer: 2 }, 6: { name: "Gym", ukeTimer: 2 }, name: "VG1", fag: 7 },
+        1: { 0: { name: "Yrkesliv i helse- og oppvekstfag", ukeTimer: 5 }, 1: { name: "Kommunikasjon og samhandling", ukeTimer: 5 }, 2: { name: "Helsefremmende arbeid", ukeTimer: 7 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name: "VG1", fag: 8 },
       }
     },
     4: {
       name: "Håndverk, design og produktutvikling",
       year_data: {
         0: { name: "Velg ett årsløp..." },
-        1: { 0: { name: "Yrkesliv i helse- og oppvekstfag", ukeTimer: 5 }, 1: { name: "Kommunikasjon og samhandling", ukeTimer: 5 }, 2: { name: "Helsefremmende arbeid", ukeTimer: 7 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name: "VG1", fag: 8 },
+        1: { 0: { name: "Produktutvikling og skapende prosesser", ukeTimer: 5 }, 1: { name: "Materialer og teknikker", ukeTimer: 12 }, 2: { name: "YFF", ukeTimer: 6 }, 3: { name: "Engelsk", ukeTimer: 5 }, 4: { name: "Matte", ukeTimer: 3 }, 5: { name: "Naturfag", ukeTimer: 2 }, 6: { name: "Gym", ukeTimer: 2 }, name: "VG1", fag: 7 },
       }
     },
     5: {
