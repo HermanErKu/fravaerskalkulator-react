@@ -20,8 +20,11 @@ const Home = ({ redirect }) => {
 
   return (
     <div className='app'>
-      <div className='breadCrumbsContainer'>
+      {/*<div className='breadCrumbsContainer'>
         <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
+      </div>*/}
+      <div className="headerContainer">
+        
       </div>
 
       <div id="linjeContainer">
