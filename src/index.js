@@ -33,6 +33,7 @@ import Index from './pages/Index';
 import PageNotFound from './pages/PageNotFound';
 import Studiefag from './pages/Studiefag';
 import Yrkesfag2 from './pages/Yrkesfag';
+import Rapporter from "./pages/Rapporter";
 
 import Home from "./pages/Home";
 import Apply from "./pages/Apply";
@@ -56,6 +57,8 @@ export default function App() {
         <Route path="yrkesfag/*" element={<Yrkesfag2 />} />
 
         <Route path="apply" element={<Apply />} />
+
+        <Route path="rapporter" element={<Rapporter />} />
 
         <Route path="*" element={<PageNotFound />} />
       </Routes>
