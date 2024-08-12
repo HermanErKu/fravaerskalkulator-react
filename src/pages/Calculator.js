@@ -116,6 +116,11 @@ const Calculator = ({fag_data}) => {
           <p>{halfPercent}%</p>
         </div>
       </div>
+
+
+
+      <br /><br /><br /><br /><br />
+      <a style={{ textDecoration:"underline" }} href="/rapporter">Funnet en feil? Rapporter den her!</a>
     </div>
   );
 }
