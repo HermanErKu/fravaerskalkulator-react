@@ -102,7 +102,7 @@ const Yrkesfag2 = () => {
         <a id='breadcrumbsLink' href={'/yrkesfag/' + linjeId + '?linjeId=' + linjeId} color='text.primary'>{yrkesfag_data[parseInt(linjeId)]["name"]}</a>
       </div>
 
-      <button onClick={(setMinLinje)}>Dette er min linje!</button>
+      {/*<button onClick={(setMinLinje)}>Dette er min linje!</button>*/}
 
       <Calculator
         fag_data={fag_data}
