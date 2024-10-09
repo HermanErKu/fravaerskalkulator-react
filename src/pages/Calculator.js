@@ -22,6 +22,12 @@ const Calculator = ({fag_data}) => {
   const [wholePercent, setWholePercent] = useState(0);
   const [halfPercent, setHalfPercent] = useState(0);
   const calculatePercent = () => {
+    if (fag_data[yearID]["name"] === "Velg ett årsløp...") {
+      setWholePercent("Velg ett årsløp over\n")
+      setHalfPercent("Velg ett årsløp over\n")
+      return;
+    }
+    
     console.log(parseFloat(fag_data[yearID][fagID].ukeTimer));
 
     setWholePercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 38) * 100).toFixed(2));
