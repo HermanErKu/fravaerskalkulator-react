@@ -59,7 +59,14 @@ const Calculator = ({fag_data}) => {
   for (let x = 0; x < keys.length; x++) {
     const name = fag_data[x]["name"];
     const fag = x;
-    yearsData.push([name,fag]);
+
+    if (name === "pause") {
+      const label = fag_data[x]["label"];
+      yearsData.push([name,fag,label])
+    }
+    else {
+      yearsData.push([name,fag]);
+    }
   }
   console.log(yearsData);
 
@@ -88,7 +95,7 @@ const Calculator = ({fag_data}) => {
           
           {
             yearsData.map((year) => (
-              <option key={year[1]} value={year[1]}>{year[0]}</option>
+              year[2] ? <optgroup key={year[1]} label={year[2]}></optgroup> : <option key={year[1]} value={year[1]}>{year[0]}</option>
             ))
           }
         </select><br /><br /><br />
