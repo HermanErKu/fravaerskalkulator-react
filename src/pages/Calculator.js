@@ -116,7 +116,7 @@ const Calculator = ({fag_data}) => {
         <div>
           <strong>Hele året:</strong>
           {wholePercent > 10 ? <p style={{color:'#FF0000'}}>{wholePercent}%</p> : wholePercent > 5 ? <p style={{color:'#ff8c00'}}>{wholePercent}%</p> : <p>{wholePercent}%</p>}
-          {halfPercent > 10 ? <p>❗</p> : halfPercent > 5 ? <p>⚠️</p> : <p></p>}
+          {wholePercent > 10 ? <p>❗</p> : wholePercent > 5 ? <p>⚠️</p> : <p></p>}
         </div>
 
         <div>
