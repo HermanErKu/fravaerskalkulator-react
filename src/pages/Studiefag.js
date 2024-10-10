@@ -32,14 +32,15 @@ const Studiefag = () => {
       name:"Medier og kommunikasjon",
       year_data: {
         0: { name:"Velg ett årsløp..." },
-        1: {}
+        1: {0: {'name': 'Engelsk', 'ukeTimer': 5}, 1: {'name': 'Fremmedspråk', 'ukeTimer': 4}, 2: {'name': 'Gym', 'ukeTimer': 2}, 3: {'name': 'Matte', 'ukeTimer': 5}, 4: {'name': 'Naturfag', 'ukeTimer': 5}, 5: {'name': 'Norsk', 'ukeTimer': 4}, 6: {'name': 'Mediesamfunnet 1', 'ukeTimer': 5}, 7: {'name': 'Medieuttrykk 1', 'ukeTimer': 5}, 'name': 'VG1', 'fag': 8},
+        2: {0: {'name': 'Fremmedspråk', 'ukeTimer': 4}, 1: {'name': 'Geografi', 'ukeTimer': 2}, 2: {'name': 'Historie', 'ukeTimer': 2}, 3: {'name': 'Gym', 'ukeTimer': 2}, 4: {'name': 'Matte', 'ukeTimer': 3}, 5: {'name': 'Norsk', 'ukeTimer': 4}, 6: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 7: {'name': 'Mediesamfunnet 2', 'ukeTimer': 5}, 8: {'name': 'Medieuttrykk 2', 'ukeTimer': 5}, 9: {'name': 'Valgfritt programfag', 'ukeTimer': 5}, 'name': 'VG2', 'fag': 10},
+        3: {0: {'name': 'Historie', 'ukeTimer': 4}, 1: {'name': 'Gym', 'ukeTimer': 2}, 2: {'name': 'Norsk', 'ukeTimer': 6}, 3: {'name': 'Religion og etikk', 'ukeTimer': 3}, 4: {'name': 'Mediesamfunnet 3', 'ukeTimer': 5}, 5: {'name': 'Medieuttrykk 3', 'ukeTimer': 5}, 6: {'name': 'Valgfritt programfag', 'ukeTimer': 9}, 'name': 'VG3', 'fag': 7},
       }
     },
     3: { 
       name:"Musikk, dans og drama",
       year_data: {
         0: { name:"Velg ett årsløp..." },
-        1: {}
       }
     },
     4: { 
