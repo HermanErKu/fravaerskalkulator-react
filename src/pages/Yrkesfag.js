@@ -26,7 +26,7 @@ const Yrkesfag2 = () => {
         10: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Norsk', 'ukeTimer': 4 }, 2: { 'name': 'Samfunnskunnskap', 'ukeTimer': 3 }, 3: { 'name': 'Arbeidsplanlegging og tegning', 'ukeTimer': 5 }, 4: { 'name': 'Materialkunnskap', 'ukeTimer': 5 }, 5: { 'name': 'Produksjon', 'ukeTimer': 7 }, 6: { 'name': 'YFF', 'ukeTimer': 9 }, 'name': 'VG2 - Trearbeid', 'fag': 7 },
         11: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Norsk', 'ukeTimer': 4 }, 2: { 'name': 'Samfunnskunnskap', 'ukeTimer': 3 }, 3: { 'name': 'Produksjon', 'ukeTimer': 11 }, 4: { 'name': 'Tegning og materialvalg', 'ukeTimer': 5 }, 5: { 'name': 'YFF', 'ukeTimer': 9 }, 'name': 'VG2 - Treteknikk', 'fag': 6 },
         12: {0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Norsk', 'ukeTimer': 4 }, 2: { 'name': 'Samfunnskunnskap', 'ukeTimer': 3 }, 3: { 'name': 'Konstruksjoner og klimaskall', 'ukeTimer': 7 }, 4: { 'name': 'Materialegenskaper, varmeisolering og tetting', 'ukeTimer': 5 }, 5: { 'name': 'Vinduer, dører og innvendig arbeid', 'ukeTimer': 5 }, 6: { 'name': 'YFF', 'ukeTimer': 9 }, 'name': 'VG2 - Tømrer', 'fag': 7},
-        13: { name: "pause", label: "VG3"},
+        13: { name: "pause", label: "VG3 - Påbygg"},
         14: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
@@ -58,7 +58,8 @@ const Yrkesfag2 = () => {
         22: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Automasjon', 'ukeTimer': 8 }, 2: { 'name': 'Elektronisk kommunikasjon', 'ukeTimer': 6 }, 3: { 'name': 'Elenergi', 'ukeTimer': 12 }, 4: { 'name': 'Organisasjon og ledelse', 'ukeTimer': 5 }, 'name': 'VG3 - Maritim elektriker', 'fag': 5 },
         23: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Flysikkerhet', 'ukeTimer': 5 }, 2: { 'name': 'Luftfartøysystemer', 'ukeTimer': 16 }, 3: { 'name': 'Vedlikeholdsteknikk', 'ukeTimer': 10 }, 'name': 'VG3 - Flytekniske fag', 'fag': 4 },
         24: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Gym', 'ukeTimer': 2 }, 2: { 'name': 'Flysikkerhet', 'ukeTimer': 5 }, 3: { 'name': 'Luftfartøysystemer', 'ukeTimer': 16 }, 4: { 'name': 'Vedlikeholdsteknikk', 'ukeTimer': 11 }, 'name': 'VG3 - Avionikerfag', 'fag': 5 },
-        25: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
+        25: { name: "pause", label: "VG3 - Påbygg"},
+        26: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
     2: {
@@ -74,7 +75,8 @@ const Yrkesfag2 = () => {
         7: { name: "pause", label: "VG3"},
         8: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Bedriftskultur og markedsføring', 'ukeTimer': 9}, 2: {'name': 'Produksjon og konseptutvikling', 'ukeTimer': 23}, 'name': 'VG3 - Eksponeringsdesign', 'fag': 3},
         9: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Kunde og kommunikasjon', 'ukeTimer': 9}, 2: {'name': 'Prosess og prosjektering', 'ukeTimer': 23}, 'name': 'VG3 - Interiør', 'fag': 3},        
-        10: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
+        10: { name: "pause", label: "VG3 - Påbygg"},
+        11: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
     3: {
@@ -97,7 +99,8 @@ const Yrkesfag2 = () => {
         14: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Helseveiledning i apotek', 'ukeTimer': 13 }, 2: { 'name': 'Kommunikasjon og samhandling', 'ukeTimer': 5 }, 3: { 'name': 'Yrkesliv i apotek', 'ukeTimer': 14 }, 'name': 'VG3 - Apotekteknikk', 'fag': 4 },
         15: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Helse og sykdom', 'ukeTimer': 13 }, 2: { 'name': 'Kommunikasjon og samhandling', 'ukeTimer': 6 }, 3: { 'name': 'Yrkesliv i helsesekretærfaget', 'ukeTimer': 13 }, 'name': 'VG3 - Helsesekretær', 'fag': 4 },
         16: { 0: { 'name': 'Gym', 'ukeTimer': 2 }, 1: { 'name': 'Helsefremmende arbeid', 'ukeTimer': 8 }, 2: { 'name': 'Kommunikasjon og samhandling', 'ukeTimer': 8 }, 3: { 'name': 'Yrkesliv i hudpleiefaget', 'ukeTimer': 15 }, 'name': 'VG3 - Hudpleier', 'fag': 4 },
-        17: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
+        17: { name: "pause", label: "VG3 - Påbygg"},
+        18: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
     4: {
@@ -114,7 +117,7 @@ const Yrkesfag2 = () => {
         8: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Design og produktutvikling', 'ukeTimer': 5}, 4: {'name': 'Produksjon og materialer', 'ukeTimer': 11}, 5: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Søm og tekstilhåndverk', 'fag': 6},
         9: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Arbeidsplanlegging og tegning', 'ukeTimer': 5}, 4: {'name': 'Materialkunnskap', 'ukeTimer': 5}, 5: {'name': 'Produksjon', 'ukeTimer': 7}, 6: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Trearbeid', 'fag': 7},
         10: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Produksjon og vedlikehold', 'ukeTimer': 11}, 4: {'name': 'Produktutvikling', 'ukeTimer': 5}, 5: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Urmaker', 'fag': 6},        
-        11: { name: "pause", label: "VG3"},
+        11: { name: "pause", label: "VG3 - Påbygg"},
         12: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
@@ -127,7 +130,7 @@ const Yrkesfag2 = () => {
         3: { name: "pause", label: "VG2"},
         4: { 0: { name: "Brukerstøtte", ukeTimer: 5 }, 1: { name: "Driftsstøtte", ukeTimer: 6 }, 2: { name: "Utvikling", ukeTimer: 6 }, 3: { name: "YFF", ukeTimer: 9 }, 4: { name: "Norsk", ukeTimer: 4 }, 5: { name: "Samfunnsfag", ukeTimer: 3 }, 6: { name: "Gym", ukeTimer: 2 }, name: "VG2 - IT", fag: 7 },
         5: { 0: { name: "Design og visualisering", ukeTimer: 5.5 }, 1: { name: "Konseptutvikling og kommunikasjon", ukeTimer: 5.5 }, 2: { name: "Teknologi og produksjon", ukeTimer: 5.5 }, 3: { name: "YFF", ukeTimer: 9 }, 4: { name: "Norsk", ukeTimer: 4 }, 5: { name: "Samfunnsfag", ukeTimer: 3 }, 6: { name: "Gym", ukeTimer: 2 }, name: "VG2 - Medie", fag: 7 }, 
-        6: { name: "pause", label: "VG3"},
+        6: { name: "pause", label: "VG3 - Påbygg"},
         7: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
@@ -148,7 +151,8 @@ const Yrkesfag2 = () => {
         11: { name: "pause", label: "VG3"},
         12: {0: {'name': 'Historie', 'ukeTimer': 5}, 1: {'name': 'Gym', 'ukeTimer': 2}, 2: {'name': 'Matte', 'ukeTimer': 5}, 3: {'name': 'Naturfag', 'ukeTimer': 3}, 4: {'name': 'Norsk', 'ukeTimer': 10}, 5: {'name': 'Naturforvaltning', 'ukeTimer': 5}, 6: {'name': 'Valgfritt programfag', 'ukeTimer': 5}, 'name': 'VG3 - Naturbruk (studieforberedende)', 'fag': 7},
         13: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Gym', 'ukeTimer': 2}, 2: {'name': 'Gårdsdrift', 'ukeTimer': 6}, 3: {'name': 'Plante- og husdyrproduksjon', 'ukeTimer': 11}, 4: {'name': 'Utmark og kulturlandskap', 'ukeTimer': 5}, 5: {'name': 'Valgfritt programfag 1', 'ukeTimer': 5}, 6: {'name': 'Valgfritt programfag 2', 'ukeTimer': 5}, 'name': 'VG3 - Landbruk', 'fag': 7},         
-        14: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
+        14: { name: "pause", label: "VG3 - Påbygg"},
+        15: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
     7: {
@@ -161,7 +165,7 @@ const Yrkesfag2 = () => {
         4: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Bransje og arbeidsliv', 'ukeTimer': 5}, 4: {'name': 'Råvare, produksjon og kvalitet', 'ukeTimer': 11}, 5: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Baker og konditor', 'fag': 6},
         5: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Bransje og arbeidsliv', 'ukeTimer': 5}, 4: {'name': 'Råvare, produksjon, salg og service', 'ukeTimer': 11}, 5: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Kokk- og servitørfag', 'fag': 6},
         6: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Bransje og arbeidsliv', 'ukeTimer': 5}, 4: {'name': 'Råvare, produksjon og kvalitet', 'ukeTimer': 11}, 5: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Matproduksjon', 'fag': 6},        
-        7: { name: "pause", label: "VG3"},
+        7: { name: "pause", label: "VG3 - Påbygg"},
         8: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
@@ -174,7 +178,7 @@ const Yrkesfag2 = () => {
         3: { name: "pause", label: "VG2"},
         4: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Forretningsdrift', 'ukeTimer': 5}, 4: {'name': 'Innovasjon og markedsføring', 'ukeTimer': 5}, 5: {'name': 'Kultur og kommunikasjon', 'ukeTimer': 5}, 6: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Salg og reiseliv', 'fag': 7},
         5: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Norsk', 'ukeTimer': 4}, 2: {'name': 'Samfunnskunnskap', 'ukeTimer': 3}, 3: {'name': 'Administrasjon og bærekraftig drift', 'ukeTimer': 6}, 4: {'name': 'Kommunikasjon og yrkesutøvelse', 'ukeTimer': 5}, 5: {'name': 'Sikkerhet', 'ukeTimer': 6}, 6: {'name': 'YFF', 'ukeTimer': 9}, 'name': 'VG2 - Service, sikkerhet og administrasjon', 'fag': 7},        
-        6: { name: "pause", label: "VG3"},
+        6: { name: "pause", label: "VG3 - Påbygg"},
         7: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
@@ -205,7 +209,8 @@ const Yrkesfag2 = () => {
         21: { name: "pause", label: "VG3"},
         22: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Dokumentasjon og kontroll', 'ukeTimer': 6}, 2: {'name': 'Feilsøking, reparasjon og vedlikehold', 'ukeTimer': 26}, 'name': 'VG3 - Anleggsmaskinmekanikerfaget', 'fag': 3},
         23: {0: {'name': 'Gym', 'ukeTimer': 2}, 1: {'name': 'Automatiseringssystemer', 'ukeTimer': 22}, 2: {'name': 'Elenergisystemer', 'ukeTimer': 5}, 3: {'name': 'Mekanisk arbeid', 'ukeTimer': 5}, 'name': 'VG3 - Automatiseringsfaget', 'fag': 4},                
-        24: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
+        24: { name: "pause", label: "VG3 - Påbygg"},
+        25: { 0: { name: "Norsk", ukeTimer: 10 }, 1: { name: "Historie", ukeTimer: 5 }, 2: { name: "Matte", ukeTimer: 5 }, 3: { name: "Naturfag", ukeTimer: 3 }, 4: { name: "Gym", ukeTimer: 2 }, 5: { name: "Valgfritt programfag", ukeTimer: 5 }, name: "Påbygg (VG3)", fag: 6 }
       }
     },
   }
