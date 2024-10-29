@@ -10,7 +10,7 @@ const Home = ({ redirect }) => {
   const cookies = new Cookies();
 
 
-  const isUpdating = true; //change to true when updating
+  const isUpdating = false; //change to true when updating
   useEffect(() => {
     if (isUpdating) {
       toast((t) => (
