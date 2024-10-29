@@ -10,18 +10,21 @@ const Home = ({ redirect }) => {
   const cookies = new Cookies();
 
 
+  const isUpdating = false; //change to true when updating
   useEffect(() => {
-    toast((t) => (
-      <span>
-        <p>Denne siden er under oppdatering og små feil/mangler må påregnes!⚠️</p>
-        <p>Opplever du vedvarende feil? <br></br><a style={{ textDecoration: "underline" }} href="/rapporter">Rapporter de her!</a></p>
-        <a onClick={() => toast.dismiss(t.id)} style={{ textDecoration: "underline", cursor:"pointer" }}>Lukk</a>
-      </span>
-    ), {
-      duration: 10000,
-      icon: "⚠️"
-    });
-  });
+    if (isUpdating) {
+      toast((t) => (
+        <span>
+          <p>Denne siden er under oppdatering og små feil/mangler må påregnes!⚠️</p>
+          <p>Opplever du vedvarende feil? <br></br><a style={{ textDecoration: "underline" }} href="/rapporter">Rapporter de her!</a></p>
+          <a onClick={() => toast.dismiss(t.id)} style={{ textDecoration: "underline", cursor: "pointer" }}>Lukk</a>
+        </span>
+      ), {
+        duration: 10000,
+        icon: "⚠️"
+      });
+    }
+  })
 
 
   let linjeCookie = cookies.get('linjeCookie');
