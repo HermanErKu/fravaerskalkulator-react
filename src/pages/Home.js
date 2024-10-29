@@ -3,10 +3,26 @@ import '../../src/App.css';
 import React, { useEffect, useState } from 'react';
 import Cookies from 'universal-cookie';
 import { Navigate } from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
 
 
 const Home = ({ redirect }) => {
   const cookies = new Cookies();
+
+
+  useEffect(() => {
+    toast((t) => (
+      <span>
+        <p>Denne siden er under oppdatering og små feil/mangler må påregnes!⚠️</p>
+        <p>Opplever du vedvarende feil? <br></br><a style={{ textDecoration: "underline" }} href="/rapporter">Rapporter de her!</a></p>
+        <a onClick={() => toast.dismiss(t.id)} style={{ textDecoration: "underline", cursor:"pointer" }}>Lukk</a>
+      </span>
+    ), {
+      duration: 10000,
+      icon: "⚠️"
+    });
+  });
+
 
   let linjeCookie = cookies.get('linjeCookie');
   if (linjeCookie === undefined) {
@@ -23,6 +39,7 @@ const Home = ({ redirect }) => {
       {/*<div className='breadCrumbsContainer'>
         <a id='breadcrumbsLink' href='/home' color='inherit'>Hjem</a>
       </div>*/}
+      <Toaster/>
       <div className="headerContainer">
         
       </div>
