@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 
-const Calculator = ({fag_data}) => {
+const Calculator = ({ fag_data, studiefag }) => {
   /*const fag_data = {
     0: {},
     1: { 0: { name: "Produksjon og historiefortelling", ukeTimer: 5.5 }, 1: { name: "Konseptutvikling og programmering", ukeTimer: 5.5 }, 2: { name: "Teknologiforståelse", ukeTimer: 5.5 }, 3: { name: "YFF", ukeTimer: 6 }, 4: { name: "Engelsk", ukeTimer: 5 }, 5: { name: "Matte", ukeTimer: 3 }, 6: { name: "Naturfag", ukeTimer: 2 }, 7: { name: "Gym", ukeTimer: 2 }, name: "VG1", fag: 8 },
@@ -27,16 +27,44 @@ const Calculator = ({fag_data}) => {
       setHalfPercent("Velg ett årsløp over\n")
       return;
     }
-    
-    console.log(parseFloat(fag_data[yearID][fagID].ukeTimer));
 
-    setWholePercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 38) * 100).toFixed(2));
-    setHalfPercent((timerVekke / (parseFloat(fag_data[yearID][fagID].ukeTimer) * 19) * 100).toFixed(2));
+    console.log(parseFloat(fag_data[yearID][fagID].timer));
+
+
+    if (studiefag) {
+      setWholePercent((timerVekke / (parseFloat(fag_data[yearID][fagID].timer) * 38) * 100).toFixed(2));
+      setHalfPercent((timerVekke / (parseFloat(fag_data[yearID][fagID].timer) * 19) * 100).toFixed(2));
+    } else {
+      setWholePercent(Math.round((((timerVekke * 0.75) / (parseInt(fag_data[yearID][fagID].timer))) * 100) * 100) / 100);
+      setHalfPercent(Math.round((((timerVekke * 0.75) / (parseInt(fag_data[yearID][fagID].timer))) * 100) * 100) / 50);
+    }
+
   }
 
 
   const [yearID, setYearID] = useState(0);
   const [optionsArray, setOptionsArray] = useState([]);
+
+  useEffect(() => {
+    if (fag_data && Object.keys(fag_data).length > 0) {
+      const firstValidYearKey = Object.keys(fag_data).find(key => fag_data[key].name !== "pause");
+      if (firstValidYearKey !== undefined) {
+        setYearID(firstValidYearKey);
+
+        const year = fag_data[firstValidYearKey];
+        const options = [];
+
+        for (let x = 0; x < year.fag; x++) {
+          options.push(<option key={x} value={x}>{year[x].name}</option>);
+        }
+
+        setOptionsArray(options);
+        setFagID(0);
+      }
+    }
+  }, [fag_data]);
+
+
   const handleYearChange = (event) => {
     const year = event.target.value;
     setYearID(year);
@@ -68,16 +96,16 @@ const Calculator = ({fag_data}) => {
 
     if (name === "pause") {
       const label = fag_data[x]["label"];
-      yearsData.push([name,fag,label])
+      yearsData.push([name, fag, label])
     }
     else {
-      yearsData.push([name,fag]);
+      yearsData.push([name, fag]);
     }
   }
   console.log(yearsData);
 
 
-  
+
   const timerRef = useRef(null);
   const handleFocus = () => {
     if (timerRef.current) {
@@ -98,7 +126,7 @@ const Calculator = ({fag_data}) => {
 
           {/*<option value="1">VG2 - IT</option>
           <option value="2">VG2 - Medie</option>*/}
-          
+
           {
             yearsData.map((year) => (
               year[2] ? <optgroup key={year[1]} label={year[2]}></optgroup> : <option key={year[1]} value={year[1]}>{year[0]}</option>
@@ -121,13 +149,13 @@ const Calculator = ({fag_data}) => {
       <div id="percents">
         <div>
           <strong>Hele året:</strong>
-          {wholePercent > 10 ? <p style={{color:'#FF0000'}}>{wholePercent}%</p> : wholePercent > 5 ? <p style={{color:'#ff8c00'}}>{wholePercent}%</p> : <p>{wholePercent}%</p>}
+          {wholePercent > 10 ? <p style={{ color: '#FF0000' }}>{wholePercent}%</p> : wholePercent > 5 ? <p style={{ color: '#ff8c00' }}>{wholePercent}%</p> : <p>{wholePercent}%</p>}
           {wholePercent > 10 ? <p>❗</p> : wholePercent > 5 ? <p>⚠️</p> : <p></p>}
         </div>
 
         <div>
           <strong>Halvår:</strong>
-          {halfPercent > 20 ? <p style={{color:'#FF0000'}}>{halfPercent}%</p> : halfPercent > 10 ? <p style={{color:'#ff8c00'}}>{halfPercent}%</p> : <p>{halfPercent}%</p>}
+          {halfPercent > 20 ? <p style={{ color: '#FF0000' }}>{halfPercent}%</p> : halfPercent > 10 ? <p style={{ color: '#ff8c00' }}>{halfPercent}%</p> : <p>{halfPercent}%</p>}
           {halfPercent > 20 ? <p>❗</p> : halfPercent > 10 ? <p>⚠️</p> : <p></p>}
         </div>
       </div>
@@ -135,7 +163,7 @@ const Calculator = ({fag_data}) => {
 
 
       <br /><br /><br /><br /><br />
-      <a style={{ textDecoration:"underline" }} href="/rapporter">Funnet en feil? Rapporter den her!</a>
+      <a style={{ textDecoration: "underline" }} href="/rapporter">Funnet en feil? Rapporter den her!</a>
     </div>
   );
 }
